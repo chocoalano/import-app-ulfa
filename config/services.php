@@ -35,4 +35,10 @@ return [
         ],
     ],
 
+    'tracking_api' => [
+        'ceisa' => env('TRACKING_API_URL'),
+        'shipper' => env('TRACKING_API_URL_SHIPPER'),
+    ],
+
+
 ];

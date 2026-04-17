@@ -79,7 +79,7 @@ export default function Profile({
                                         defaultValue={auth.user.email}
                                         name="email"
                                         required
-                                        autoComplete="username"
+                                        autoComplete="name"
                                         placeholder="Email address"
                                     />
 

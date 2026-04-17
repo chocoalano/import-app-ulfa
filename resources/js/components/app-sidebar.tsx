@@ -13,7 +13,7 @@ import {
 import { dashboard } from '@/routes';
 import { type NavItem } from '@/types';
 import { Link } from '@inertiajs/react';
-import { BookOpen, Folder, LayoutGrid } from 'lucide-react';
+import { BookOpen, Folder, LayoutGrid, FileText, ShoppingCart, User} from 'lucide-react';
 import AppLogo from './app-logo';
 
 const mainNavItems: NavItem[] = [
@@ -21,6 +21,21 @@ const mainNavItems: NavItem[] = [
         title: 'Dashboard',
         href: dashboard(),
         icon: LayoutGrid,
+    },
+    {
+        title: 'Invoice',
+        href: '/invoice',
+        icon: FileText,
+    },
+    {
+        title: 'PO',
+        href: '/po',
+        icon: ShoppingCart,
+    },
+    {
+        title: 'Supplier',
+        href: '/supplier',
+        icon: User,
     },
 ];
 
@@ -63,3 +78,7 @@ export function AppSidebar() {
         </Sidebar>
     );
 }
+function route(arg0: string): NonNullable<string | import("@inertiajs/core").UrlMethodPair | undefined> {
+    throw new Error('Function not implemented.');
+}
+
